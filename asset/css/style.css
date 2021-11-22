@@ -17,6 +17,7 @@ body {
   padding-bottom: 10px;
   display: flex;
   justify-content: center;
+  text-align: center;
   border-bottom: 5px solid #d3ba34;
   /*color: #05c46b; */
   animation: christmas 5s infinite;
@@ -32,6 +33,7 @@ body {
 }
 header {
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: space-around;
   background-color: #dcdde1;
@@ -40,14 +42,10 @@ header {
 
 .logo-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 20px;
-}
-
-.logo-bar {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
+  align-items: center;
 }
 .icon {
   width: 30px;
@@ -56,6 +54,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   font-size: 22px;
+  flex-wrap: wrap;
 }
 .contact-item {
   display: flex;
@@ -66,15 +65,19 @@ header {
 }
 .logo {
   width: 100%;
-  display: block;
+  display: flex;
   max-width: 250px;
+  align-items: center;
 }
 ul,
 ol {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   list-style: none;
+  padding: 15px;
+  font-size: 25px;
 }
 li {
   padding: 20px;
@@ -83,17 +86,10 @@ ul li:before {
   content: "✓ ";
 }
 .incoming {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 10px;
   color: #d3ba34;
-}
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15px;
-  font-size: 25px;
+  margin: 10px;
 }
 li:hover,
 .contact-item:hover {
@@ -117,6 +113,7 @@ li:hover,
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 10px;
+  margin: 10px;
 }
 .sell {
   display: flex;
@@ -125,11 +122,14 @@ li:hover,
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 10px;
+  margin: 10px;
 }
 .about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+  text-align: center;
 }
 #location {
   margin: 20px;
@@ -146,6 +146,9 @@ li:hover,
   justify-content: center;
   flex-wrap: wrap;
 }
+/* .contact-us iframe {
+  display: flex;
+} */
 .contact-name,
 .footer-name {
   color: #d3ba34;
@@ -184,7 +187,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .affiliate {
   width: 170px;
+}
+
+@media screen and (max-width: 700px) {
+  .buy-sell {
+    flex-wrap: wrap;
+  }
 }
