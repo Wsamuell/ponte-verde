@@ -39,6 +39,10 @@ header {
   background-color: #dcdde1;
   margin-bottom: 25px;
 }
+nav {
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
 .nav-item {
   color: #d3ba34;
 }
@@ -191,15 +195,15 @@ li:hover,
   text-align: center;
   margin-top: 20px;
   margin: 10px;
-  /* border-radius: 1.5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  border-radius: 1.5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .feature:hover {
   color: gray;
   transition: all 500ms ease;
 }
 .feature-img {
-  width: 300px;
+  width: 200px;
 }
 .address {
   color: #d3ba34;
