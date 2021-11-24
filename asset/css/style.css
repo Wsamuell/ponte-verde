@@ -93,6 +93,30 @@ ol {
 li {
   padding: 20px;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.email {
+  width: 295px;
+}
+
+.nav-desc:hover .dropdown-content {
+  display: block;
+}
 ul li:before {
   content: "✓ ";
   color: #d3ba34;
@@ -112,14 +136,11 @@ li:hover,
   text-align: center;
 }
 .buy-sell {
-  /* margin: 20px; */
   display: flex;
   flex-direction: row;
   font-size: 20px;
   border-bottom: 5px solid #d3ba34;
   padding: 10px;
-
-  /* justify-content: space-evenly; */
 }
 .buy {
   display: flex;
