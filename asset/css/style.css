@@ -179,11 +179,13 @@ li:hover,
 }
 .sub-section {
   margin: 20px;
+  text-align: center;
 }
 .sub-section-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .sub-img {
   max-width: 300px;
