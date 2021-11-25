@@ -312,13 +312,13 @@ footer {
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
   .google-map iframe {
     width: 250px;
     height: 220px;
   }
   .email {
-    width: 195px;
+    width: 155px;
   }
 }
 @media screen and (max-width: 300px) {
